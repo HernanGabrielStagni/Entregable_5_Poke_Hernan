@@ -30,11 +30,11 @@ console.log(pokemon)
           <>
              <h2>{pokemon?.name}</h2>
              <img className='pokeInfoCard__header-sprite' src={pokemon?.sprites.other['official-artwork'].front_default} alt="img pokemon" />
+         
+         
           </>
            }
-        <h2>{pokemon?.name}</h2>
-        <img className='pokeInfoCard__header-sprite' src={pokemon?.sprites.other['official-artwork'].front_default} alt="img pokemon" />
-    
+       
     </div>
   )
 }
