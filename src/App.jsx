@@ -3,6 +3,7 @@ import './components/0_Styles/App.css'
 import Home from './pages/Home'
 import Pokedex from './pages/Pokedex'
 import ProtectedRoutes from './pages/ProtectedRoutes'
+import PokeInfo from './pages/PokeInfo'
 
 
 //'https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0'
@@ -15,7 +16,7 @@ function App() {
          <Route path='/' element={<Home />}/>
          <Route element={<ProtectedRoutes />}>
             <Route path='/pokedex' element={<Pokedex />} />
-            {/* <Route path='/pokedex/:name' element={<PokeInfo/>}/> */}
+            <Route path='/pokedex/:name' element={<PokeInfo/>}/> 
          </Route>
       </Routes>
     </div>
