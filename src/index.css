@@ -9,6 +9,8 @@ body{
   margin: 0;
   /* background-color: rgb(248, 102, 5); */
   font-family:fantasy;
+  overflow-y: hidden;
+  height: 100vh;
   
 }
 h1,h2,h3,h4,p,ul{
@@ -21,7 +23,7 @@ ul{
   list-style: none;
 }
 input{
-  border:1px solid rgb(143, 146, 146);
+  border:1px solid rgb(108, 109, 109);
 outline:3px;
 font-family: inherit; /*ya que no hereda de forma predeterminada*/
 background-color: rgb(220, 216, 211);
