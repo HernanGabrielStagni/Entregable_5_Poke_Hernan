@@ -26,6 +26,7 @@ padding: .5em;
 color: red;
 font-weight: 500;
 font-family:Arial, Helvetica, sans-serif;
+box-shadow: .3em .5em  .2em .1em rgba(41, 40, 40, 0.662);
 }
 
 .formPoke__container-form button{
@@ -33,7 +34,9 @@ font-family:Arial, Helvetica, sans-serif;
     width: 30%;
     padding: 5px 0px;
     font-size: 1.2rem; 
-    border-radius: 0 8px 8px 0
+    border-radius: 0 8px 8px 0;
+    box-shadow: .3em .5em  .2em .1em rgba(41, 40, 40, 0.662);
+    
 
     }
 
@@ -41,10 +44,12 @@ font-family:Arial, Helvetica, sans-serif;
 .formPoke__container-select{
 
 background-color: rgb(152, 152, 152);
-width: 12em;
-padding: 0px 15px;
-font-size: 1.2rem; 
+width: 10em;
+padding: 15px 25px;
+font-size: 1.4rem;
+font-weight: 600; 
 border-radius: 10px 10px 10px 10px;
+box-shadow: .3em .5em  .2em .1em rgba(41, 40, 40, 0.662);
 margin: .4em;
 
 }
