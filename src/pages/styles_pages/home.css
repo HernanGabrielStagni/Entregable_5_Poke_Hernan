@@ -1,7 +1,7 @@
 
 
 .home__container{
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     padding: .5em;
     height:  100vh;
     display: flex;
@@ -42,7 +42,7 @@ img{
 .home_logo-img img{
   display: block;
   width: 100%;
-  aspect-ratio:5/2;
+  aspect-ratio:5/1;
 }
 
 
@@ -50,7 +50,7 @@ img{
     margin-top: 1em;
     text-align: center;
     color: rgb(248, 5, 5);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 100;
     font-family: initial;
 }
@@ -58,7 +58,7 @@ img{
 .home__give-name{
 text-align: center;
 color: black;
-font-size: .7rem;
+font-size: .8rem;
 }
 
 .home_footer{
