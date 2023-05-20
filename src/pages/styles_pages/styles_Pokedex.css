@@ -55,7 +55,7 @@
 } */
 
 .pokedex__body{
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     display: flex;
     flex-direction: column;
     justify-content: center;

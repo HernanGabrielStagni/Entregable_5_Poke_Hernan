@@ -1,5 +1,5 @@
 .formPoke__container{
-background-color: red; 
+/* background-color: red;  */
 display: flex;
 justify-content:center;
 align-content: center;
@@ -9,7 +9,7 @@ padding: .5em;
 width: 100%;
 }
 .formPoke__container-form{
-    background-color: aquamarine;
+    /* background-color: aquamarine;  */
     display: flex;
     padding: .5em;
     /* width: 100%; */
@@ -18,13 +18,18 @@ width: 100%;
 }
 
 .formPoke__container-form input{
-/* background-color: coral; */
-/* width: 80%; */
+background-color: rgb(196, 190, 188); 
+width: 80%; 
+font-size: 1.5em;
+border-radius:  10px 0 0 10px  ;
 }
 
 .formPoke__container-form button{
-    /* background-color: rgb(96, 203, 57); */
-    /* width: 12em; */
+    background-color: rgb(253, 4, 4);
+    width: 13em;
+    padding: 15px 15px;
+    font-size: 1.2rem; 
+    border-radius: 0 10px 10px 0 
     }
 
 
@@ -32,4 +37,9 @@ width: 100%;
 
 background-color: rgb(209, 235, 195);
 width: 12em;
+padding: 0px 15px;
+font-size: 1.2rem; 
+border-radius: 10px 10px 10px 10px;
+margin: .4em;
+
 }
