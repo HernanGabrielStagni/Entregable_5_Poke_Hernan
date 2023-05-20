@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { setTrainerName } from '../../store/slices/trainerName.slice'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import '../0_Styles/home.css'
+import '../0_Styles/Style_FormNameUser.css'
 const FormNameUser = () => {
   
   const inputName=useRef() //se trae la info del imput

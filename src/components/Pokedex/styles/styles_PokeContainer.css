@@ -1,0 +1,12 @@
+.pokeContainer__container{
+    padding: 2em;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    
+}
+
+
+

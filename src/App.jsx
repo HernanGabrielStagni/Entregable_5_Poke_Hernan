@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import './components/0_Styles/App.css'
+import './App.css'
 import Home from './pages/Home'
 import Pokedex from './pages/Pokedex'
 import ProtectedRoutes from './pages/ProtectedRoutes'

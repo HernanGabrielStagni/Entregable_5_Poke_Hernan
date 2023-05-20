@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import useFetch from '../../hooks/useFetch'
 import PokeCard from './PokeCard'
-
+import './styles/styles_PokeContainer.css'
 const PokeContainer = ({formUrl}) => {
   // const url ='https://pokeapi.co/api/v2/pokemon?limit=100&offset=0' //dejo sin efecto esta 
   const [pokemons, getAllPokemons]= useFetch(formUrl) // le meto el estado formUrl por url
@@ -15,7 +15,7 @@ const PokeContainer = ({formUrl}) => {
 
 
    return (
-     <div className='poke-container'>
+     <div className='pokeContainer__container'>
         {
           
           pokemons?.results

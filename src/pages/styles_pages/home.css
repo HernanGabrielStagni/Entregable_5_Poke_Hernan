@@ -1,6 +1,6 @@
 
 
-.pokedex__container{
+.home__container{
     /* background-color: blueviolet; */
     padding: .5em;
     height:  100vh;
@@ -10,7 +10,7 @@
     align-items: center;
     color: black;
 }
-.pokedex__body{
+.home__body{
 /* background-color: aqua; */
 padding: 2em 4em;
 display: flex;
@@ -20,7 +20,7 @@ align-items: center;
 }
 
 
-.pokedex__article{
+.home__article{
     display: grid;
     justify-content: center;
     align-content: center;
@@ -30,7 +30,7 @@ align-items: center;
 }
 
 
-.pokedex_logo-img{
+.home_logo-img{
   width: 100%;
  
 }
@@ -39,14 +39,14 @@ img{
   width: 100%;
 }
 
-.pokedex_logo-img img{
+.home_logo-img img{
   display: block;
   width: 100%;
   aspect-ratio:5/2;
 }
 
 
-.pokedex__saludo-trainer{
+.home__saludo-trainer{
     margin-top: 1em;
     text-align: center;
     color: rgb(248, 5, 5);
@@ -55,47 +55,16 @@ img{
     font-family: initial;
 }
 
-.pokedex__give-name{
+.home__give-name{
 text-align: center;
 color: black;
 font-size: .7rem;
 }
 
-.pokedex_footer{
+.home_footer{
     background-color: burlywood;
     width: 100%;
     margin-bottom: 0;
     color: black;
 }
 
-/*****************************************/
-
-.form{
-    margin-top: 2em;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2em;
-
-  }
-
-
-  .form__input{
-    padding: .6em 1.2em;
-    border-radius:.5em 0 0 .5em ;
-    border:0;
-    box-shadow: .3em .5em  .2em .1em rgba(41, 40, 40, 0.662);
-
-
-  }
-
-
-  .form__button{
-    border-radius: 0 .5em .5em 0;
-    border: 0;
-    padding: 0 1em;
-    background-color: #e63434;
-    color: white;
-    box-shadow: .3em .5em  .2em .1em rgba(41, 40, 40, 0.662);
-  font-weight: 200;
-  letter-spacing: 1px;
-}

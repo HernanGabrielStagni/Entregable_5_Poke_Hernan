@@ -2,7 +2,7 @@
 import { useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import React, { useEffect } from 'react'
-import
+import './styles_pages/styles_PokeInfo.css'
 
 const PokeInfo = () => {
   

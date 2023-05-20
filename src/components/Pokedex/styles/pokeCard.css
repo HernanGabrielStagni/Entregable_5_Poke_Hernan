@@ -4,8 +4,18 @@
   border-radius: 0.8em;
   overflow: hidden;
   border: .5em solid rgb(180,180,180);
+  transition:transform 1000ms ease;
+ 
 }
  
+
+
+.pokemon:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+ 
+
+}
 .pokemon__header{
 background-color: rgb(180,180,180);
 height: 180px;
@@ -29,11 +39,11 @@ background-image:linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82
   background-image:linear-gradient(178.92deg, #78491d 0.92%, #e7ae13 47.96%, #CAE099 99.08%);
   }
   
-  .bg-normal{
+.bg-normal{
   background-image:linear-gradient(176.37deg, #2a2826 -32.26%, #8c3718 22.55%, #E8AE1B 125.72%);
   }
   
-  .bg-flying{
+.bg-flying{
   background-image:linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
   }
 
@@ -43,23 +53,23 @@ background-image:linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82
   color:#0bb069;
   }
   
-  .color-fire{
+.color-fire{
 color: #f4383b;
   }
   
-  .color-water{
+.color-water{
     color:  #2d06dc;
   }
 
-  .color-bug{
+.color-bug{
     color:#0bb069;
     }
     
-    .color-normal{
+.color-normal{
   color: #f4383b;
     }
     
-    .color-flying{
+.color-flying{
       color:  #2d06dc;
     }
 /*************************************************************/

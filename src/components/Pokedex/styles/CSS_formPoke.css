@@ -1,0 +1,35 @@
+.formPoke__container{
+background-color: red; 
+display: flex;
+justify-content:center;
+align-content: center;
+flex-wrap: wrap;
+gap: 1em;
+padding: .5em;
+width: 100%;
+}
+.formPoke__container-form{
+    background-color: aquamarine;
+    display: flex;
+    padding: .5em;
+    /* width: 100%; */
+    justify-content: center;
+
+}
+
+.formPoke__container-form input{
+/* background-color: coral; */
+/* width: 80%; */
+}
+
+.formPoke__container-form button{
+    /* background-color: rgb(96, 203, 57); */
+    /* width: 12em; */
+    }
+
+
+.formPoke__container-select{
+
+background-color: rgb(209, 235, 195);
+width: 12em;
+}
