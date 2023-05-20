@@ -18,10 +18,14 @@ width: 100%;
 }
 
 .formPoke__container-form input{
-background-color: rgb(196, 190, 188); 
+    background-color: rgb(170, 170, 170);
 width: 70%; 
-font-size: 1.5em;
-border-radius:  10px 0 0 10px  ;
+font-size: 1.2em;
+border-radius:  8px 0 0 8px  ;
+padding: .5em;
+color: red;
+font-weight: 500;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 .formPoke__container-form button{
@@ -29,14 +33,14 @@ border-radius:  10px 0 0 10px  ;
     width: 30%;
     padding: 5px 0px;
     font-size: 1.2rem; 
-    border-radius: 0 10px 10px 0
+    border-radius: 0 8px 8px 0
 
     }
 
 
 .formPoke__container-select{
 
-background-color: rgb(209, 235, 195);
+background-color: rgb(152, 152, 152);
 width: 12em;
 padding: 0px 15px;
 font-size: 1.2rem; 
