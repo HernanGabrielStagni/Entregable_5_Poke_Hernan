@@ -1,7 +1,7 @@
 
 
 .home__container{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     height:  100vh;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ font-size: .8rem;
 }
 
 .home_footer{
-    background-color: burlywood;
+    /* background-color: burlywood; */
     width: 100%;
     margin-bottom: 0;
     color: black;
