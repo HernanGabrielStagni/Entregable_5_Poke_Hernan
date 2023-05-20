@@ -17,8 +17,8 @@ const Pokedex = () => {
     <article className="pokedex__container">
       
        <header className="pokedex__header">
-        <img className="img__guarda" src="../../public/img/guarda_sup_pokedex.svg" alt="" />
-          <img className="img__logo" src="../../public/img/logo_Pokedex_png_SFondo.png" alt="" />
+        <img className="img__guarda" src="../../img/guarda_sup_pokedex.svg" alt="" />
+          <img className="img__logo" src="../../img/logo_Pokedex_png_SFondo.png" alt="" />
         </header>
       <section className="pokedex__body">
         
