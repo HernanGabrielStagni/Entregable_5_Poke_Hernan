@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import React, { useEffect } from 'react'
 import './styles_pages/styles_PokeInfo.css'
+import InfoCard from '../components/Poke_Info_folder/InfoCard'
 
 const PokeInfo = () => {
   
@@ -29,9 +30,8 @@ console.log(pokemon)
         
           <>
             <div className='pokeInfo' >
-               <h2>{pokemon?.name}</h2>
-               <img className='pokeInfoCard__header-sprite' src={pokemon?.sprites.other['official-artwork'].front_default} alt="img pokemon" />
-               <h3>ACA PROBANDO</h3>
+
+               <InfoCard pokemon={pokemon}/>
          
             </div>
           </>

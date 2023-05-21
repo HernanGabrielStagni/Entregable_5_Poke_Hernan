@@ -9,8 +9,7 @@ body{
   margin: 0;
   /* background-color: rgb(248, 102, 5); */
   font-family:fantasy;
-  overflow-y: hidden;
-  height: 100vh;
+  height: 100vh; 
   
 }
 h1,h2,h3,h4,p,ul{
