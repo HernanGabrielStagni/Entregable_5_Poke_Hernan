@@ -126,7 +126,7 @@ padding: 1em;
 
 
 .peso_value{
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* contenedor de la altura*/
@@ -150,13 +150,106 @@ padding: 1em;
 
 
 .altura_value{
-font-;
+font-family: Arial, Helvetica, sans-serif;
 }
 
+/********************************************************************/
+
+.pokemon_info_uls {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    padding-top: 1em;
+  }
+  .pokemon_infospan_li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .pokemon_info_types {
+    display: flex;
+    gap: 0.5em;
+    font-weight: 600;
+   
+  }
+  .pokemon_info_hab {
+    display: flex;
+    gap: 0.5em;
+  }
+  
+  .pokemon_info_type-specific {
+    justify-content: center;
+    text-transform: capitalize;
+    border: solid 1px;
+    background-color: #7cade9;
+    padding: 0.5px 5px;
+    color: white;
+  }
+  .pokemon_infohab_li{
+    border: solid 1px;
+    padding: 0.5px 5px;
+    border-color: #bbc5c2;
+    font-weight: 600;
+  }
+  
+  .pokemon_info_type-specific:nth-child(2) {
+    justify-content: center;
+    text-transform: capitalize;
+    background-color: #76c8a5;
+  }
+  .pokemon_info_stats {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    font-size: 0.6rem;
+    row-gap: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 400px;
+  }
+  .pokemon_info_stats-specific {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    
+  }
+  
+  .pokemon_info_stats-label {
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    
+  }
+  .pokemon_info_stats-value {
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+  .wrapper{
+    width: 100%;
+    color: #1ee832;
+  }
+  .container{
+    background-color: #bcc4c0;
+  }
+  @media only screen and (max-width: 600px) {
+    .wrapper{
+      width: 60%;
+      margin-right: 35%;
+      color: #1f5aa3;
+    }
+    .pokemon_info_stats {
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      font-size: 0.6rem;
+      row-gap: 2em;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      width: 320px;
+    }}
 
 
-
-
+/********************************************************************/
 
 /* 
 .pokeInfo__card-container{
