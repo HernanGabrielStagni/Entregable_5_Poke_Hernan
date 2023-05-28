@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const PokeCard = ({ url }) => {
   const [pokemon, getPokemonbyId] = useFetch(url);
+  // console.log(pokemon)
 
   useEffect(() => {
     getPokemonbyId();

@@ -23,7 +23,7 @@ const FormNameUser = () => {
   return (
     <form className='form' onSubmit={handleSubmit}> 
         <input className='form__input' ref={inputName} type="text" />
-        <button className='form__button'>Start but</button>
+        <button className='form__button'>Start</button>
     </form>
   )
 }

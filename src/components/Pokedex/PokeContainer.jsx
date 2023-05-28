@@ -11,7 +11,7 @@ const PokeContainer = ({formUrl}) => {
     
   }, [formUrl])
   
-  // console.log(pokemons) ////////////////////////
+  console.log(pokemons)
 
 
    return (
@@ -25,6 +25,7 @@ const PokeContainer = ({formUrl}) => {
               key={pokemon.url}
               url={pokemon.url}
               />
+             
             ))
 
           ) 

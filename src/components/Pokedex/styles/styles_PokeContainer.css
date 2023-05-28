@@ -1,11 +1,11 @@
 .pokeContainer__container{
-    /* background-color: rebeccapurple; */
-    padding: 2em;
-    width: 90vw;
+    background-color: rebeccapurple;
+    padding: 2em 0;
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 1em;
     
 }
 
