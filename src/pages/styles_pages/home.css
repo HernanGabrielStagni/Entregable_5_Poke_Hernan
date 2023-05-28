@@ -1,7 +1,7 @@
 
 
 .home__container{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     height:  100vh;
     display: flex;
     flex-direction: column;
@@ -9,8 +9,6 @@
     align-items: center;
     color: black;
     position: relative;
-    
-    
 }
 .home__body{
 /* background-color: aqua; */

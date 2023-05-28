@@ -5,9 +5,5 @@
     padding: 0;
     width: 100%;
     height: 100vh;
-    position: relative;
-    display: flex;
-    justify-self: center;
-    align-items: center;
 }
  
