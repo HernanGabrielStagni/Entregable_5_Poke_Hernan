@@ -51,7 +51,7 @@
 
 
 .pokedex__body{
-    background-color: rgb(210, 212, 212);
+    /* background-color: cadetblue; */
     display: flex;
     flex-direction: column;
     justify-content: center;

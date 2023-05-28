@@ -17,16 +17,16 @@ const Pokedex = () => {
     <article className="pokedex__container">
       
        <header className="pokedex__header">
-             <img className="img__guarda" src="../../img/GUARDA_SUP_POKE2.png" alt="" />
-             <img className="img__logo" src="../../img/logo_Pokedex_png_SFondo.png" alt="" />
+        <img className="img__guarda" src="../../img/GUARDA_SUP_POKE2.png" alt="" />
+          <img className="img__logo" src="../../img/logo_Pokedex_png_SFondo.png" alt="" />
         </header>
       <section className="pokedex__body">
         
         <p className='pokedex__welcome-container'>
           <span className='pokedex__welcome-span1'>Welcome  {trainerName}...!</span>
           <span className='pokedex__welcome-span2'> here you can find your favorite Pokemon</span>
-        </p>
         
+        </p>
           {/*le pase la props para que guarde el estado */}
         <FormPoke urlBase={urlBase} setFormUrl={setFormUrl} />{" "}
         <PokeContainer formUrl={formUrl} />

@@ -12,7 +12,7 @@
   .form__input{
     background-image: url('../../../img/tapiz\ pokemon-ultrasol-ultraluna-analisis-1510569184128.webp');
     opacity: .8;
-    /* background-size: cover; */
+    background-size: cover;
     background-position:center;
     
     
