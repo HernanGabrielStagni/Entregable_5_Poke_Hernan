@@ -1,11 +1,11 @@
 import React from 'react'
 import './CSS_InfoCard.css'
-import ProgressBar from "@ramonak/react-progress-bar";
+import ProgressBar from '../Poke_Info_folder/ProgressBar';
 /*npm install --save @ramonak/react-progress-bar*/
 /*https://www.npmjs.com/package/@ramonak/react-progress-bar*/
 
 const InfoCard = ({ pokemon }) => {
-
+console.log(pokemon)
     return (
         <>
 
@@ -31,11 +31,12 @@ const InfoCard = ({ pokemon }) => {
                           
                           <p className="infoCard__altura">
                             <span className='altura_etiqueta'>Height</span>
+                            <span className='peso_value'>{pokemon?.height}</span>
                          </p>
                         </div>
                    </div>
 
-{/*******************************************************************************/}
+{/************************* * * * Type   and Abilities  * * * ***************************************/}
 <div className="pokemon_info_uls">
                   <div>
                     <span className="pokemon_infospan_li">Type</span>
@@ -52,7 +53,8 @@ const InfoCard = ({ pokemon }) => {
                   </div>
 
                   <div>
-                    <span className="pokemon_infospan_li">Hability</span>
+                    
+                    <span className="pokemon_infospan_li">Ability</span>
                     <ul className="pokemon_info_hab">
                       {pokemon?.abilities.map((objType) => (
                         <li
@@ -79,14 +81,14 @@ const InfoCard = ({ pokemon }) => {
                           {objStat.stat.name}
                         </span>
                         <span className="pokemon_info_stats-label">{objStat.base_stat} /150</span>
-                      </div>
+                      </div >
+                      {/* le paso al componente progressBar una por una las estadisticas */}
+                      {/* va a ir pintando un contenedor dentro de otro */}
                       
                       <ProgressBar
-                        className="wrapper"
-                        barContainerClassName="container"
-                        completed={objStat.base_stat}
-                        maxCompleted={150}
-                      />
+                        progress={objStat.base_stat}
+                       
+                       />
                       <span
                         className={`pokemon_info_stats-value color-${pokemon?.types[0].type.name}`}
                       ></span>
