@@ -5,6 +5,9 @@
     margin: 0 auto;
     width: 100%;
     background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
 }
 
@@ -56,6 +59,7 @@
 .infoCard__info-container{
 
 padding: 1em;
+background-color: #ad2b49;
 }
 
 
@@ -91,7 +95,7 @@ padding: 1em;
     transform: translateX(-50%);
     text-transform: capitalize;
     font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
 /* contenedor del peso - Altura*/
@@ -102,7 +106,7 @@ padding: 1em;
     gap: 2.5em;
     padding-bottom: .5em;
     padding-top: 1em; 
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
 /* contenedor del peso*/
@@ -113,6 +117,7 @@ padding: 1em;
     padding: 8px;
     align-items: center;
     gap: .3em;
+    font-family:'Times New Roman', Times, serif;
 
 }
 
@@ -120,13 +125,14 @@ padding: 1em;
 .peso_etiqueta{
     font-weight: 500;
     color: red;
-    font-family: Arial, Helvetica, sans-serif;
-     font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+     font-weight: 400;
     }
 
 
 .peso_value{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
 }
 
 /* contenedor de la altura*/
@@ -137,6 +143,7 @@ padding: 1em;
     padding: 8px;
     align-items: center;
     gap: .3em;
+    font-family:'Times New Roman', Times, serif;
 
 }
 
@@ -144,22 +151,24 @@ padding: 1em;
 .altura_etiqueta{
     font-weight: 500;
     color: red;
-    font-family: Arial, Helvetica, sans-serif;
-     font-weight: 600; 
+    font-family:'Times New Roman', Times, serif;
+     font-weight: 400; 
 }
 
 
 .altura_value{
-font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
 /********************************************************************/
 
 .pokemon_info_uls {
+    background-color: #7cade9;
     display: flex;
     justify-content: center;
     gap: 0.5em;
     padding-top: 1em;
+    font-family:'Times New Roman', Times, serif;
   }
   .pokemon_infospan_li{
     display: flex;
@@ -199,6 +208,7 @@ font-family: Arial, Helvetica, sans-serif;
     background-color: #76c8a5;
   }
   .pokemon_info_stats {
+    background-color:#1ee832;
     display: grid;
     grid-template-columns: repeat(1, auto);
     font-size: 0.6rem;
@@ -208,6 +218,7 @@ font-family: Arial, Helvetica, sans-serif;
     width: 400px;
   }
   .pokemon_info_stats-specific {
+    background-color: red;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -216,7 +227,7 @@ font-family: Arial, Helvetica, sans-serif;
   }
   
   .pokemon_info_stats-label {
-    font-weight: 600;
+    font-weight: 300;
     text-transform: uppercase;
     
     

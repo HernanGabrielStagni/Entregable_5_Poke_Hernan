@@ -14,13 +14,13 @@
     opacity: .8;
     /* background-size: cover; */
     background-position:center;
-    
+    font-size: 1.05rem;
     padding: .6em 1.2em;
     border-radius:.5em 0 0 .5em ;
     /* border: 1.5px solid rgb(14, 13, 13); */
     box-shadow: .3em .5em  .2em .1em rgba(41, 40, 40, 0.662);
-    text-shadow: 1px 1px rgba(41, 40, 40, 0.662);;
-     color: white;
+    /* text-shadow: 1px 1px 2px rgb(63, 59, 59); */
+     color: rgb(14, 13, 13);
   }
 
 
@@ -33,4 +33,5 @@
     box-shadow: .3em .5em  .2em .1em rgba(41, 40, 40, 0.662);
   font-weight: 200;
   letter-spacing: 1px;
+  z-index: 10;
 }

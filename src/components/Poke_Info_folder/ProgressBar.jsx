@@ -1,10 +1,8 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-
 
 const ProgressBar = ({progress}) => {
 
-	const Parentdiv  = {
+  const Parent__container  = {
 		
 		height: '23px',
 		width: '100%',
@@ -13,38 +11,26 @@ const ProgressBar = ({progress}) => {
 		marginTop: 10,
 		marginBottom: 10,
 		marginLeft:0,
-		marginRight: 0
-		
+		marginRight: 0,
+    padding: 1
 	}
-	
-	const Childdiv = {
+
+  const Child__progress = {
 		height: '100%',
-		// width: `${progress}%`,
-		maxWidth: '100%',
+		width: `${progress}%`,
+		// maxWidth: '100%',
 		background: 'linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%)',
 	    borderRadius: 5,
 		textAlign: 'right'
 	}
-	
-	const progresstext = {
-		padding: 10,
-		color: 'black',
-		fontWeight: 500
-	}
-
-			
-	return (
-		<div  style={Parentdiv}>
-			<motion.div className='progress_bar'
-				animate={{width: (`${progress * 0.66}%`)}}
-			 	initial={{width: '0%'}}
-				style={Childdiv}>
-
-				<span style={progresstext}>{`${progress}/150` }</span>
-				
-			</motion.div>
-		</div>
-	)
+    return (
+    <div style={Parent__container}>
+      <div style={Child__progress}>
+        ProgressBar
+      </div>
+     
+    </div>
+  )
 }
 
-export default ProgressBar;
+export default ProgressBar
