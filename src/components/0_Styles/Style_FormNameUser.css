@@ -37,12 +37,12 @@
     height: 100%;
     /* border-radius: 0 .5em .5em 0; */
     border: 0;
-    padding: 0 auto;
+    padding: 3em auto;
     background-color: #e63434;
     color: white;
     /* box-shadow: .3em .5em  .2em .1em rgba(41, 40, 40, 0.662); */
   
-  font-size: 1.6em;
+  font-size: 1.8em;
   letter-spacing: 1px;
   z-index: 10;
 
