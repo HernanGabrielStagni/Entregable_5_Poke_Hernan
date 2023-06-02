@@ -1,5 +1,5 @@
 import React from 'react'
-import './CSS_InfoCard.css'
+import './Styles/CSS_InfoCard.css'
 import ProgressBar from '../Poke_Info_folder/ProgressBar';
 /*npm install --save @ramonak/react-progress-bar*/
 /*https://www.npmjs.com/package/@ramonak/react-progress-bar*/
@@ -84,11 +84,12 @@ console.log(pokemon)
                       </div >
                       {/* le paso al componente progressBar una por una las estadisticas */}
                       {/* va a ir pintando un contenedor dentro de otro */}
-                      
-                      <ProgressBar
-                        progress={objStat.base_stat}
-                       
-                       />
+ 
+                     <div className='ProgressBar__container'>
+                         <ProgressBar
+                          progress={objStat.base_stat}
+                         />
+                    </div>
                       <span
                         className={`pokemon_info_stats-value color-${pokemon?.types[0].type.name}`}
                       ></span>
