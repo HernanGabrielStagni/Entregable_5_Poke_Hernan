@@ -9,6 +9,7 @@
     box-shadow: .3em .5em  .2em .1em rgba(41, 40, 40, 0.662);
     padding: 0;
     background-color: #fbf8f8;
+    min-width: 310px;
   }
 
 
