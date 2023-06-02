@@ -10,6 +10,7 @@
     padding: 0;
     background-color: #fbf8f8;
     min-width: 310px;
+  overflow: hidden;
   }
 
 
@@ -33,14 +34,18 @@
 
   .form__button{
     width: 30%;
-    border-radius: 0 .5em .5em 0;
+    height: 100%;
+    /* border-radius: 0 .5em .5em 0; */
     border: 0;
-    padding: 0 3em;
+    padding: 0 1em;
     background-color: #e63434;
     color: white;
     /* box-shadow: .3em .5em  .2em .1em rgba(41, 40, 40, 0.662); */
-  font-weight: 200;
+  
+  font-size: 1.6em;
   letter-spacing: 1px;
   z-index: 10;
-}
+  padding: auto;
+  
+  }
 
