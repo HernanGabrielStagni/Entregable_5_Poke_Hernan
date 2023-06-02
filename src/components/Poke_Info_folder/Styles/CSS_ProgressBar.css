@@ -1,0 +1,16 @@
+
+
+.progress__bar-text{
+  
+    /* background-color: rgb(238, 61, 220); */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ProgressBar__container{
+    text-align: center;
+    background-color: rebeccapurple;
+    padding: 3em;
+    }
