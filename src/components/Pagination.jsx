@@ -12,7 +12,7 @@ const Pagination = ({pokemonsPerPage, totalPokemons, paginate}) => {
   //console.log(pageNumbers)
  
   const [currentPages, setCurrentPages] = useState(1)
-  const [pagesPerPage, setPagesPerPage] = useState(5)
+  const [pagesPerPage, setPagesPerPage] = useState(4)
   const indexOfLastPages = currentPages * pagesPerPage
   const indexOfFirstPages = indexOfLastPages - pagesPerPage
   subPageNumbers = pageNumbers.slice(indexOfFirstPages, indexOfLastPages)

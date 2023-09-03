@@ -18,6 +18,8 @@
 }
 
 .home__items{
+    background-color: rebeccapurple;
+    padding: .5em;
     margin-bottom: 7em;
     width: 650px;
     display: flex;
@@ -29,7 +31,7 @@
 
 .home__title{
     /* width: 676px; */
-    width: 100%;
+    width: 130%;
     height: 121px;
     background-image: url('../../img/pokedex.svg');
     background-position: bottom;
