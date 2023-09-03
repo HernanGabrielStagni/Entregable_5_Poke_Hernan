@@ -1,21 +1,37 @@
 import React from 'react'
 import FormNameUser from '../components/FormNameUser'
 import './styles/home.css'
+import { useSelector } from "react-redux";
+// import LogoPokedexSvg from "../../public/img/LogoPokedexSvg";
+
 
 const Home = () => {
+  const { trainerName } = useSelector((state) => state);
   return (
     <div className="home__container">
-    <article className='home'>
-      <div className='home__items'>
-        <div className='home__title'></div>
-        <h2 className='home__hi'>Hi Trainer!</h2>
-        <p className='home__please'>Please give us your name to start</p>
-        <FormNameUser />
-      </div>
-      <div className="home_footer"></div>
-    </article>
-    </div>
-  )
-}
+      <div className="home__body">
+        <article className="home__article">
+          
+          <div className="home_logo-img">
+            <img src="/img/pokedex.svg" alt="" />
+          </div>
 
-export default Home
+          <h2 className="home__saludo-trainer"> Hi... Pokemon Trainer !</h2>
+         
+          <p className="home__give-name">
+            Pleace give us your trainer name to start.{" "}
+          </p>
+
+          <FormNameUser />
+        </article>
+      </div>
+      
+      <div className="home_footer">
+         <img src="/img/homeFooter.svg" alt="" />
+      </div>
+    
+    </div>
+  );
+};
+
+export default Home;

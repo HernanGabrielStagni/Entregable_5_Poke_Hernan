@@ -1,73 +1,76 @@
+
+
 .home__container{
+    background-color: blueviolet;
+    min-height:  100vh;
+    display: grid;
+
+    grid-row: 2fr auto;
+    color: black;
     
-    display: flex;
+    
+}
+.home__body{
+/* background-color: aqua; */
+padding: 2em 4em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+
+.home__article{
+    display: grid;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
+    align-content: center;
+    max-width:350px;
+    /* background-color: darksalmon;  */
+    padding: 1em;
 }
 
-.home{
-    height: 100vh ;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    /* background-color: rgb(187, 247, 227);  */
+
+
+
+.home_logo-img img{
+  display: block;
+  width: 100%;
+  aspect-ratio:5/1;
 }
 
-.home__items{
-    background-color: rebeccapurple;
-    padding: .5em;
-    margin-bottom: 7em;
-    width: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-     /* background-color: blue;  */
+
+.home__saludo-trainer{
+    margin-top: 1em;
+    text-align: center;
+    color: rgb(248, 5, 5);
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: initial;
 }
 
-.home__title{
-    /* width: 676px; */
-    width: 130%;
-    height: 121px;
-    background-image: url('../../img/pokedex.svg');
-    background-position: bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.home__hi{
-
-font-style: normal;
-font-weight: 700;
-font-size: 2.5rem;
-line-height: 61px;
+.home__give-name{
 text-align: center;
-color: #FE1936;
-padding: 1em 0 0 0;
-
-}
-
-.home__please {
-text-align: center;
+color: black;
+font-size: .8rem;
 }
 
 .home_footer{
-    /* background-color: blueviolet; */
-    /* max-height: 200px; */
-    height: 160px;
+  
     width: 100%;
-    background-image: url('../../img/homeFooter.svg');
-    background-position:bottom;
-    background-size: contain; 
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-bottom: -;
+    color: black;
+    padding: 0em;
+}
+
+.home_footer img{
+  display: block;
+  width: 100%;
+  aspect-ratio:8/1;
+  
+  
+
+  
 }
 
 @media  (min-width: 1440px){
