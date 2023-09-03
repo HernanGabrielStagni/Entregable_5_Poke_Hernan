@@ -1,9 +1,3 @@
-
-.app{
-    background-color: rgba(215, 219, 219, 0.192);
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
+input, button, select{
+    font-size: 1.5rem;
 }
- 

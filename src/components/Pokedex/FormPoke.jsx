@@ -1,62 +1,54 @@
 import React, { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import useFetch from '../../hooks/useFetch'
-import '../Pokedex/styles/CSS_formPoke.css'
-const FormPoke = ( {setFormUrl,urlBase} ) => {
+import './styles/formPoke.css'
 
-const inputPoke=useRef()
 
-const navigate=useNavigate()
+const FormPoke = ({setFormUrl, urlBase}) => { //FormPoke viene llamado de Pokedex.jsx
 
-const url = 'https://pokeapi.co/api/v2/type/' //End point de la api que trae "...un listado de los tipos de Pokes..."
-const [ types, getAllTypes] = useFetch(url) //por eso la url es fija
-//el hook que cree me devuelve el estado con la info, y  la funcion que lo modifica, no uso el hasError
+    const inputPoke = useRef() // use ref para guardar lo ingresado en el 
+                                //input de seleccion de pokemon por nombre
+    const navigate = useNavigate()
 
-useEffect(() =>{
-  getAllTypes()
-},[])
+    const url = 'https://pokeapi.co/api/v2/type/' //end point para traer todos los tipos de pokemones
+    const [ types, getAllTypes] = useFetch(url) //declaro el objeto que retorna useFetch, desestructurando,
+                                                // types es donde guardo el resultado del useFetch
+                                                //getAllTypes es la función en useFetch que hace el axios.get
 
-const handleSubmit = (e) =>{
-    e.preventDefault()
-    const path=`/pokedex/${inputPoke.current.value.trim().toLowerCase()}`
-    navigate(path) //arma la ruta ..../pokedex/${ } y la navega
-  }
-  
-  const handleChange = (e) =>{
+    useEffect (() => {
+        getAllTypes() //traigo todos los tipos y lo guardo en la variable de estado types
+    }, [])
 
-    setFormUrl(e.target.value) //seteamos el estado con lo que capturamos en onChange
+    //console.log(types);
 
-  }
-  
-  
-  useFetch
+    const handleSubmit = e => { //seleccionar por nombre de pokemon
+        e.preventDefault()
+        const path=`/pokedex/${inputPoke.current.value.trim().toLowerCase()}` //captura del input con el nombre del pokemon
+        //console.log(inputPoke.current.value.trim().toLowerCase());
+        navigate(path)
+    }
+
+    const handleChange = (e)=> {
+        setFormUrl(e.target.value); //cargo en formUrl el tipo de pokemon a visualizar 
+    }
+
   return (
-    <div className='formPoke__container'>
-               
-        <form className='formPoke__container-form'onSubmit={handleSubmit}>
-            <input ref={inputPoke} type="text" />
+    <div className='formPokeContainer' >
+        
+        <form className='formPokeContainer__form' onSubmit={handleSubmit}> {/*formulario para seleccionar por nombre de pokemon*/}
+            <input ref={inputPoke} type="text" />  
             <button>Search</button>
         </form>
-
-        
-        <select className='formPoke__container-select' onChange={handleChange} id="">
-        <option value={urlBase}>All Pokemons</option>
-
-        {
-          types?.results.map((type) =>(
-            <option key={type.url} value={type.url}>{type.name}</option>
-          ))
-
-        }
-       
-          
+        <select className='formPokeContainer__select' onChange={handleChange} name="" id=""> {/* select para elegir pokes por tipo */}
+            <option value={urlBase}>All Pokemons</option>
+            {
+                types?.results.map(type => ( //aquí se renderiza el listado de opciones de tipos de pokes
+                    <option key={type.url}  value={type.url}>{type.name}</option>
+                ))
+            }
         </select>
-
-   </div>
+      </div>
   )
 }
 
 export default FormPoke
-
-
-
