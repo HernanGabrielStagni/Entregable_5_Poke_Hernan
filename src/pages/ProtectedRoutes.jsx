@@ -18,5 +18,5 @@ if(trainerName.length >= 3){
 
   
 }
-
+/*Exportamos*/
 export default ProtectedRoutes
