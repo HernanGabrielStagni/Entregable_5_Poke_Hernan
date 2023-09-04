@@ -1,36 +1,40 @@
-import React from 'react'
-import FormNameUser from '../components/FormNameUser'
-import './styles/home.css'
-import { useSelector } from "react-redux";
-// import LogoPokedexSvg from "../../public/img/LogoPokedexSvg";
+import React from "react";
+// import FooterPokeball from "../componentes/LayautFolder/FooterPokeball";
+import {useDispatch} from "react-redux";
+import FormNameUser from "../components/FormNameUser";
+import './styles/home.css';
 
 
 const Home = () => {
-  const { trainerName } = useSelector((state) => state);
+
+ const dispatch = useDispatch()
+
+
+    const handleSubmit =(e) =>{
+       e.preventDefault()
+       const nameTrainer= e.target.nameTrainer.value
+       console.log(nameTrainer)
+    }
   return (
-    <div className="home__container">
-      <div className="home__body">
-        <article className="home__article">
-          
-          <div className="home_logo-img">
-            <img src="/img/pokedex.svg" alt="" />
+    <main className="home__container">
+      <section className="home__body">
+        
+        <article>
+          <div>
+            <img src="/public/img/pokedex.svg" alt="" />
           </div>
+          <h2>Hello Trainer !</h2>
+          <p>To start give your name</p>
+          
+          <FormNameUser/>
 
-          <h2 className="home__saludo-trainer"> Hi... Pokemon Trainer !</h2>
-         
-          <p className="home__give-name">
-            Pleace give us your trainer name to start.{" "}
-          </p>
-
-          <FormNameUser />
         </article>
-      </div>
-      
-      <div className="home_footer">
-         <img src="/img/homeFooter.svg" alt="" />
-      </div>
-    
-    </div>
+      </section>
+      <div className="home__footer">
+      <img src="/public/img/homeFooter.svg" alt="" />
+          </div>
+      {/* <FooterPokeball /> */}
+    </main>
   );
 };
 
