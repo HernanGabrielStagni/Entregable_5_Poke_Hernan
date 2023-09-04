@@ -9,34 +9,26 @@ const Pagination = ({pokemonsPerPage, totalPokemons, paginate}) => {
   for (let i = 1; i <= Math.ceil(totalPokemons / pokemonsPerPage); i++) {
          pageNumbers.push(i);
   }
-  //console.log(pageNumbers)
+
  
   const [currentPages, setCurrentPages] = useState(1)
   const [pagesPerPage, setPagesPerPage] = useState(4)
   const indexOfLastPages = currentPages * pagesPerPage
   const indexOfFirstPages = indexOfLastPages - pagesPerPage
   subPageNumbers = pageNumbers.slice(indexOfFirstPages, indexOfLastPages)
-  //console.log(subPageNumbers)
-  
+ 
+  /*SI LA PAGINA ACTUAL NO ES LA ULTIMA  ENTONCES AVANZA UNA MAS */
   const handleNext = (e) => {
     console.log('Next')
     if (currentPages <= pageNumbers.length/pagesPerPage){
       setCurrentPages(currentPages + 1)
       console.log(currentPages)
       paginate((subPageNumbers.at(-1) + 1),e)
-
-      // if(((currentPages+1)*pagesPerPage)>subPageNumbers.at(-1)){
-        
-        
-      //   paginate((subPageNumbers.at(-1)+1),e)
-        
-      // }else {
-      //   paginate(((currentPages+1)*pagesPerPage)+2 ,e)
-      // }
-     
+          
     }
   }
 
+  /*SI LA PAGINA ACTUAL NO ES LA ULTIMA  ENTONCES VUELVE UNA MAS */
   const handlePrevious = (e) => {
     console.log('Previous')
     if (currentPages > 1){

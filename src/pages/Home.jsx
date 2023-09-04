@@ -20,7 +20,7 @@ const Home = () => {
       <section className="home__body">
         
           <div className="home__body-banner">
-              <img src="/public/img/pokedex.svg" alt="" />
+              <img src="/img/pokedex.svg" alt="" />
           </div>
 
           <article className="home__body-saludo-login">
@@ -34,7 +34,7 @@ const Home = () => {
       </section>
 
       <div className="home__footer">
-          <img src="/public/img/homeFooter.svg" alt="" />
+          <img src="/img/homeFooter.svg" alt="" />
       </div>
       
       {/* <FooterPokeball /> */}
