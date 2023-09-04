@@ -1,14 +1,14 @@
  
 .home__container{
-    background-color: #d89d38;
+    background-color: #fdfbf8;
     display: grid;
     grid-template-rows: 1fr auto; /* La primera fila ocupa todo el alto disponible, la segunda fila se ajusta automáticamente al contenido */
     height: 100vh; /* Esto asegura que el contenedor ocupe todo el alto de la ventana */
-gap: 3em;
+
 }
 
 .home__body{
-    background-color: rgb(19, 57, 110);
+    /* background-color: rgb(19, 57, 110); */
     height: 100%;
     width: 100%; 
     display: flex;
@@ -19,148 +19,38 @@ gap: 3em;
 }
 
 .home__body-banner{
+    height: 50%;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   
+
 
 }
 
 .home__body-saludo-login{
-background-color: rebeccapurple;
+background-color: rgb(232, 227, 236);
 color: #FE1936;
 padding: 2em;
+
 height: 100%;
 display: grid;
+align-content: center;
+text-align: center; 
 }
+
+.home__body-saludo-login h2{
+color: black;
+}
+
+.home__body-saludo-login p{
+    color: rgb(239, 44, 10);
+    }
+
 
 
 .home__footer{
 /* align-self: end;  */
 }
 
-
-
-.home__items{
-    background-color: rebeccapurple;
-    padding: .5em;
-    margin-bottom: 7em;
-      width: 100%;
-    /* width: 650px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-     /* background-color: blue;  */
-}
-
-.home__title{
-    /* width: 676px; */
-    width: 130%;
-    height: 121px;
-    background-image: url('../../img/pokedex.svg');
-    background-position: bottom;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.home__hi{
-
-font-style: normal;
-font-weight: 700;
-font-size: 2.5rem;
-line-height: 61px;
-text-align: center;
-color: #FE1936;
-padding: 1em 0 0 0;
-
-}
-
-.home__please {
-text-align: center;
-}
-
-.home_footer{
-    /* background-color: blueviolet; */
-    /* max-height: 200px; */
-    height: 160px;
-    width: 100%;
-    background-image: url('../../img/homeFooter.svg');
-    background-position:bottom;
-    background-size: contain; 
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-@media  (min-width: 1440px){
-    .home_footer{
-        height: 160px;
-        width: 100%;
-        background-size: cover; 
-    }
-}
-
-@media  (max-width: 1200px){
-    .home__items{
-        
-        width: 550px;
-        /* background-color: blue;  */
-    }
-    .home_footer{
-        height: 150px;
-        width: 100%;
-        background-size:cover; 
-    }
-}
-
- @media (max-width: 800px){
-    /* .home{
-        height: 150vh;
-        width: 100%;
-    } */
-    .home__items{
-        
-        width: 380px;
-        /* background-color: greenyellow;  */
-    }
-    .home_footer{
-        height: 140px;
-        width: 100%;
-        /* max-width: 800px; */
-        background-size: cover;
-    } 
-} 
-
-@media (max-width: 500px){
-     .home{
-        height: 100vh;
-        width: 100%;
-        /* background-color: red; */
-    } 
-    .home_footer{
-        height: 120px;
-        width: 100%;
-       
-        background-size: cover;
-    } 
-}
-@media (max-width: 400px){
-    .home{
-       height: 100vh;
-       width: 100%;
-       /* background-color: red; */
-   } 
-   .home_footer{
-       height: 110px;
-       width: 100%;
-      
-       background-size: cover;
-   }     
-
-   .home__title{
-    
-    width: 100%;
-    
-}
-    
-
-} 

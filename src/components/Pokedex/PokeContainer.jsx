@@ -84,7 +84,7 @@ const PokeContainer = ({formUrl}) => {  //llamado de Pokedex.jsx-- muestra todos
        {
         pokemons?.results
         ? (
-            //pokemons?.results.map(pokemon => (
+           
               currentPokemons.map(pokemon => (
               <PokeCard 
                   key={pokemon.url}
@@ -103,13 +103,7 @@ const PokeContainer = ({formUrl}) => {  //llamado de Pokedex.jsx-- muestra todos
         )
        } 
       </article>
-      {/* <div className="poke__pagination">
-       <Pagination 
-            pokemonsPerPage={pokemonsPerPage} 
-            totalPokemons = {totalPokemons} 
-            paginate = {paginate}
-            />
-       </div> */}
+     
     </div>
     </div>
   )

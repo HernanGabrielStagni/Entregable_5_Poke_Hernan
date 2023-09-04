@@ -6,31 +6,25 @@
 .form{
     padding: 0;
     margin: 0;
-    /* height: 100%; */
-    /* background-color: rgb(232, 174, 174); */
-    padding-top:  2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    /* justify-content: space-evenly; */
+    padding:2em;
+     
 }
 
 .form__input{
+    background-color: rgb(28, 151, 160);
     border-radius: .5em 0 0 .5em;
+  width: 70%;
+    
 }
 
 .form__btn{
-    margin:  auto;
+width: 30%;
     background-color: var(--Red);
     color: white;
-    width: 5em;
-    /* border: var(--Red); */
     border-radius: 0 .5em .5em 0;
-    border-right-color: #D93F3F;
-    border-color: var(--Red);
+   
 }
-
+/* 
 @media (max-width: 800px) {
 
     .form{
@@ -64,4 +58,4 @@
         
         
     }
-}
+} */
