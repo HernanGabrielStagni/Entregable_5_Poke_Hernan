@@ -7,22 +7,26 @@
     padding: 0;
     margin: 0;
     padding:2em;
+    font-size: 1rem;
      
 }
 
 .form__input{
-    background-color: rgb(28, 151, 160);
+    background-color: rgb(184, 188, 188);
     border-radius: .5em 0 0 .5em;
   width: 70%;
+  font-size: inherit;
     
 }
 
 .form__btn{
-width: 30%;
+
+
     background-color: var(--Red);
     color: white;
     border-radius: 0 .5em .5em 0;
-   
+    font-size: inherit;
+  
 }
 /* 
 @media (max-width: 800px) {
