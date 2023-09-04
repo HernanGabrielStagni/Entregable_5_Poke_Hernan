@@ -19,20 +19,24 @@ const Home = () => {
     <main className="home__container">
       <section className="home__body">
         
-        <article>
-          <div>
-            <img src="/public/img/pokedex.svg" alt="" />
+          <div className="home__body-banner">
+              <img src="/public/img/pokedex.svg" alt="" />
           </div>
-          <h2>Hello Trainer !</h2>
-          <p>To start give your name</p>
-          
-          <FormNameUser/>
 
-        </article>
+          <article className="home__body-saludo-login">
+              
+              <h2>Hello Trainer !</h2>
+              <p>To start give your name</p>
+              
+              <FormNameUser/>
+
+          </article>
       </section>
+
       <div className="home__footer">
-      <img src="/public/img/homeFooter.svg" alt="" />
-          </div>
+          <img src="/public/img/homeFooter.svg" alt="" />
+      </div>
+      
       {/* <FooterPokeball /> */}
     </main>
   );
