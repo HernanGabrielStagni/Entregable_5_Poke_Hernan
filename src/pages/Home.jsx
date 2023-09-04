@@ -20,7 +20,7 @@ const Home = () => {
       <section className="home__body">
         
           <div className="home__body-banner">
-              <img src="/public/img/otros/logo_Pokedex_png_SFondo.png" alt="" />
+              <img src="/img/otros/logo_Pokedex_png_SFondo.png" alt="" />
           </div>
 
           <article className="home__body-saludo-login">
@@ -34,7 +34,7 @@ const Home = () => {
       </section>
 
       <div className="home__footer">
-      <img src="/public/img/otros/footer_Pokedex_png_SFondo  cortito mas alto.png" alt="" />
+      <img src="/img/otros/footer_Pokedex_png_SFondo  cortito mas alto.png" alt="" />
       </div>
       
       {/* <FooterPokeball /> */}
